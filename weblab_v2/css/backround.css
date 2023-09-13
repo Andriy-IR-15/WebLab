@@ -1,0 +1,41 @@
+.title2 {
+    color: var(--color-dark-green, #222F33);
+    font-feature-settings: 'clig' off, 'liga' off;
+    padding:15vh 0 1vh 9vw;
+    font-family: Merriweather;
+    font-size: 35px;
+    font-weight: 500;
+    display: flex;
+    border: s;
+}
+
+.parahraph2 {
+    width: 440px;
+    color: #646D70;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 12px 0 0 9vw;
+    display: flex;
+}
+.button__img {
+    width: 30vw;
+    height: 70vh; 
+    margin-right: 10vw;
+}
+
+.backround_button {
+    color: #646D70;
+    margin: 5vh 0 15vh 9vw;
+    font-size: 16px;
+    background: #fff;
+    padding: 10px 21px;
+    border-radius: 4px;
+    border: #606B74 solid 2px;
+}
+
+.background__nav{
+    display: flex;
+    justify-content: space-between;
+}
+

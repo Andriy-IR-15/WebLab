@@ -1,0 +1,88 @@
+.hero {
+    background: url(../img/bit.png)no-repeat;
+    background-size: 100vw 100vh;
+    flex-shrink: 0;
+    padding: 2%;
+    height: 100vh;
+}
+
+.header_contact{
+    border: 0;
+    margin-left: 10px;
+    border-radius: 4px;
+    width: 90px;
+    height: 34px;
+    background: #FFFFFF;
+    color: #606B74;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 21.5px;
+    border: 0;
+    margin-top: 10px;
+    margin-right: 5vw;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav aside {
+    display: flex;
+
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav_item {
+    margin:20px 40px 0 0;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.title {
+    color: #fff;
+    margin-left: 9vw;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 0;
+}
+
+.parahraph {
+    width: 440px;
+    color: #fff;
+    font-family: Merriweather;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 12px 0 0 9vw;
+}
+
+.header__logo {
+    margin-left: 9vw;
+    margin-top: 6.5px;
+}
+
+.hero__iner {
+    position: relative;
+    top: 28vh;
+} 
+
+.class__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__img {
+    width: 12.5vw;
+    height: 5.5vw;
+    margin-right: 28vw;
+}

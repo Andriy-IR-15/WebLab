@@ -1,0 +1,44 @@
+.elements{
+    background: #fff;
+    display: flex;
+    width: 90vw;
+    height: 85vh;
+    padding-top: 10vh;
+}
+
+.elements article{
+    display: flex;
+    align-content: space-around;
+    width: 30vw;
+    flex-wrap: wrap;
+    margin-right: 4vw;
+    margin-bottom: 4vh;
+}
+
+.el{
+    width: 13vw;
+    height: 10vh;
+}
+
+.eltitle{
+    font-family: Merriweather;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
+
+.elpar{
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.house{
+    padding: 10vw;
+    padding-top: 0;
+    
+}
