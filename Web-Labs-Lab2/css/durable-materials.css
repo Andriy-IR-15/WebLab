@@ -1,0 +1,69 @@
+.durable-materials {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0 9vw 0 11vw;
+}
+
+.durable-materials__info {
+    padding: 6vw 4vw 6vw 0;
+}
+
+.durable-materials__info__header {
+    margin-bottom: 1vw;
+    font-family: Merriweather;
+    font-weight: 900;
+    font-size: 2.6rem;
+    color: #222F33;
+}
+
+.durable-materials__info__text {
+    margin-bottom: 5.1vw;
+    font-size: 1.2rem;
+    color: #646D70;
+    line-height: 2.3rem;
+}
+
+.durable-materials__info__read-more {
+    padding: 15px 25px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #606B74;
+    border: 2px solid #646D70;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.durable-materials__image {
+    width: 35vw;
+}
+
+@media screen and (max-width: 1140px) {
+    .durable-materials {
+        flex-direction: column;
+        text-align: center;
+    }
+    .durable-materials__image {
+        display: none;
+    }
+}

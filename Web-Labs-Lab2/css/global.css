@@ -1,0 +1,55 @@
+body {
+    font-family: "Rubik";
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+button {
+
+    border: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+.logo {
+    width: 2.9rem;
+    height: 2.3rem;
+}
+
+.wordmark {
+    width: 8.4rem;
+    height: 1.3rem;
+    margin-left: 0.6vw;
+}
+
+@media screen and (max-width: 380px){
+    .wordmark {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    :root {
+        font-size: 30px;
+    }
+}
