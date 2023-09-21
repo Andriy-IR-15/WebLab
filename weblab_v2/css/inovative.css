@@ -1,0 +1,39 @@
+.inovative__nav {
+    background-color: #222F33;
+    color: #fff;
+    padding-bottom: 10vh;
+}
+
+.inovative__nav article{
+    display: flex;
+justify-content: space-between;
+}
+.title3 {
+    font-feature-settings: 'clig' off, 'liga' off;
+    padding:5vh 0 5vh 9vw;
+    font-family: Merriweather;
+    font-size: 35px;
+    font-weight: 500px;
+    margin-right: 0;
+}
+
+.parahraph3 {
+    color: var(--greys-white, #FFF);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left:9vw;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
+.parahraph4 {
+    color: var(--greys-white, #FFF);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 15vw;
+    line-height: 24px;
+    opacity: 0.6;
+}
+
