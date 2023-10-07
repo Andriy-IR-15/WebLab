@@ -1,0 +1,106 @@
+/* Стилі для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Стилі для заголовка h1 */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Стилі для контейнера .header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Стилі для кнопок сортування та пошуку */
+#sort-by-price,
+#sort-by-brand,
+#search-input,
+#search-button,
+#cancel-search-button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#sort-by-price,
+#sort-by-brand {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#search-input {
+    flex: 1;
+}
+
+#search-button {
+    background-color: #28A745;
+    color: #fff;
+}
+
+#cancel-search-button {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+/* Стилі для контейнера #alcohol-list */
+#alcohol-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Стилі для елементів алкоголю .alcohol-item */
+/* Оновлені стилі для елементів алкоголю .alcohol-item */
+.alcohol-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alcohol-item img {
+    width: 90px;
+    height: 250px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.alcohol-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Оновлені стилі для загальної ціни */
+#total-price {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total-amount {
+    color: #28A745;
+    font-size: 24px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>BuhloWorld</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <h1 class="first">Фірмовий магазин алкоголю</h1>
+
+    <div class="header">
+        <button id="sort-by-price">Сортувати за ціною</button>
+        <button id="sort-by-brand">Сортувати за брендом</button>
+
+        <input type="text" id="search-input" placeholder="Пошук за брендом або моделлю">
+        <button id="search-button">Пошук</button>
+        <button id="cancel-search-button">Скасувати пошук</button>
+    </div>
+
+    <div id="alcohol-list"></div>
+
+    <p id="total-price">Загальна ціна: ₴<span id="total-amount">0</span></p>
+
+    <script>
+        class Alcohol {
+            constructor(brand, name, price, volume, strength, country, image) {
+                this.brand = brand;
+                this.name = name;
+                this.price = price;
+                this.volume = volume;
+                this.strength = strength;
+                this.country = country;
+                this.image = image;
+            }
+        }
+
+        const alcoholsData = [
+            new Alcohol('Tanqueray', 'Blackcurrant Royale', 1099, '0.7л', '41.3%', 'Велико Британія', './img/Tanqueray.png'),
+            new Alcohol('Chandon', 'Garden Spritz', 799, '0.75л', '11.5%', 'Аргентина', './img/chandon.png'),
+            new Alcohol('Glenmorangie', 'Tale of Forest', 7800, '0.7л', '46%', 'Шатландія', './img/forest.jpg'),
+            new Alcohol('Koskenkorva', 'Blueberry Juniper', 475, '0.7л', '37.5%', 'Фінляндія', './img/vodka.jpg')
+        ];
+
+        let filteredAlcohols = alcoholsData;
+
+        function renderAlcohols(alcohols) {
+            const alcoholList = document.getElementById('alcohol-list');
+            alcoholList.innerHTML = '';
+
+            alcohols.forEach(alcohol => {
+                const alcoholItem = document.createElement('div');
+                alcoholItem.classList.add('alcohol-item');
+                alcoholItem.innerHTML = `
+                    <img src="${alcohol.image}" alt="${alcohol.brand} ${alcohol.name}" width="200">
+                    <p>Бренд: ${alcohol.brand}</p>
+                    <p>Назва: ${alcohol.name}</p>
+                    <p>Ціна: ${alcohol.price}₴</p>
+                    <p>Об'єм: ${alcohol.volume}</p>
+                    <p>Міцність: ${alcohol.strength}</p>
+                    <p>Країна: ${alcohol.country}</p>
+                `;
+                alcoholList.appendChild(alcoholItem);
+            });
+            filteredAlcohols = alcohols;
+        }
+
+        renderAlcohols(filteredAlcohols);
+
+        const cancelSearchButton = document.getElementById("cancel-search-button");
+
+        cancelSearchButton.addEventListener("click", () => {
+            document.getElementById('search-input').value = "";
+            filteredAlcohols = alcoholsData;
+            renderAlcohols(filteredAlcohols); 
+            calculateTotalPrice();
+        });
+
+
+        document.getElementById('sort-by-price').addEventListener('click', () => {
+            const sortedAlcohols = [...filteredAlcohols].sort((a, b) => a.price - b.price);
+            renderAlcohols(sortedAlcohols);
+        });
+
+        document.getElementById('sort-by-brand').addEventListener('click', () => {
+            const sortedAlcohols = [...filteredAlcohols].sort((a, b) => a.brand.localeCompare(b.brand));
+            renderAlcohols(sortedAlcohols);
+        });
+
+        document.getElementById('search-button').addEventListener('click', () => {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const filteredAlcoholsList = filteredAlcohols.filter(alcohol =>
+                alcohol.brand.toLowerCase().includes(searchTerm) ||
+                alcohol.name.toLowerCase().includes(searchTerm)
+            );
+            renderAlcohols(filteredAlcoholsList);
+            calculateTotalPrice();
+        });
+
+        function calculateTotalPrice() {
+            const totalAmount = filteredAlcohols.reduce((total, alcohol) => total + alcohol.price, 0);
+            document.getElementById('total-amount').textContent = totalAmount;
+        }
+
+        calculateTotalPrice();
+    </script>
+</body>
+</html>
