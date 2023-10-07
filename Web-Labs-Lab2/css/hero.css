@@ -1,0 +1,106 @@
+.hero__container {
+    padding-left: 10vw;
+    display: flex;
+}
+
+.hero__text {
+    padding-right: 14.5vw;
+}
+
+.hero__paragraph {
+    font-size: 1.4rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 1.2vw;
+}
+
+.hero__header {
+    font-family: Merriweather;
+    font-weight: 900;
+    font-size: 2.6rem;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.hero__movie {
+    display: flex;
+}
+
+.hero__watch-movie {
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+}
+
+.hero__play-button {
+    margin: auto;
+    transform-origin: 50% 5em;
+    animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__text {
+        margin: auto auto auto 20px;
+        padding-bottom: 30px;
+    }
+
+    .hero__movie {
+        justify-content: flex-start;
+    }
+
+    .hero__play-button {
+        margin: 0;
+    }
+
+    .hero__watch-movie {
+        margin: auto auto auto 0;
+    }
+
+    .hero__header {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hero__play-button {
+        width: 50%;
+    }
+
+    .hero__text {
+        padding-right: 24.5vw;
+    }
+
+    .hero__header {
+        max-width: 35vw;
+    }
+}

@@ -1,0 +1,39 @@
+.innovative {
+    color: #FFFFFF;
+    background-color: #26353B;
+    padding: 6.6vw 9vw 7.8vw 11vw;
+    display: inline-block;
+}
+
+.innovative__header {
+    margin-bottom: 1.1vw;
+    font-family: Merriweather;
+    font-weight: 900;
+    font-size: 2.6rem;
+    letter-spacing: 0.1vw;
+}
+
+.innovative__text {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    display: flex;
+    line-height: 2.1rem;
+}
+
+.innovative__text1 {
+    padding-right: 4.3vw;
+}
+
+@media screen and (max-width: 1140px) {
+    .innovative__header {
+        padding-bottom: 1vh;
+        text-align: center;
+    }
+    .innovative__text {
+        flex-direction: column;
+        text-align: center;
+    }
+    .innovative__text1 {
+        padding-bottom: 3vh;
+    }
+}
