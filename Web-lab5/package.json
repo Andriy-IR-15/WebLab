@@ -1,0 +1,10 @@
+{
+    "name": "web-lab5",
+    "version": "1.0.0",
+    "description": "Мій проект",
+    "dependencies": {
+    },
+    "scripts": {
+    "start": "node server.js"
+    }
+  }
