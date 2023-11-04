@@ -1,0 +1,12 @@
+select {
+    margin: 1vw 0.25vw 1vw 1.25vw;
+    width: 14vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    border-width: 0.15vw;
+    border-color: black;
+}
+
+select:hover {
+    cursor: pointer;
+}

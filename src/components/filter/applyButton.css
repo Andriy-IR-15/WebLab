@@ -1,0 +1,14 @@
+.applyButton {
+    background-color: #dbdbdb;
+    margin: auto 2vw auto auto;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    border-width: 0.1vw;
+    border-color: black;
+}
+
+.applyButton:hover {
+    background-color: #b8b8b8;
+    cursor: pointer;
+}

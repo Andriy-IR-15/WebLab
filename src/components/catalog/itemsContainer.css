@@ -1,0 +1,10 @@
+.itemsList {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+.listItem {
+    width: 20vw;
+}

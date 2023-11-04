@@ -1,0 +1,35 @@
+.footerDiv {
+    background-color:#a7a7a7;
+    margin-top: 10vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+.topDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-top: 2vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.socialMediaDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.social {
+    width: 3vw;
+    height: 3vw;
+}
