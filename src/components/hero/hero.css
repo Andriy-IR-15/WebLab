@@ -1,0 +1,16 @@
+.phonesPicture {
+    width: 28vw;
+    height: 23vw;
+    margin: 1vw 0 1vw 1vw;
+    border-radius: 0.5vw;
+}
+
+.titleDiv {
+    width: 30%;
+}
+
+.mainDiv {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-around;
+}
