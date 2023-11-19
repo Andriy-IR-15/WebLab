@@ -26,16 +26,16 @@ h2 {
     height: 3vw;
     border: none;
     border-radius: 0.5vw;
-    background-color: #afafaf;
+    background-color: #da66ca;
     transition: background-color 0.2s ease-in-out;
 }
 
 .viewMoreButton:hover {
-    background-color: #b9b9b9;
+    background-color: #bd3dab;
     cursor: pointer;
 }
 
-.afterMainDiv {
+.heroDiv {
     margin-top: 12vw;
     text-align: center;
 }

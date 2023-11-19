@@ -1,0 +1,109 @@
+.itemInfoDiv {
+    display: flex;
+    margin-left: 4vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.phonePicture {
+    width: 30vw;
+    height: 25vw;
+    margin-right: 3vw;
+    border-radius: 1vw;
+}
+
+.characteristics {
+    display: flex;
+}
+
+.characteristic {
+    margin-right: 1vw;
+    padding: 0 0.5vw 0.3vw 0.5vw;
+    background-color: #5664a1;
+    border-radius: 1vw;
+}
+
+.fields {
+    margin-top: 3vw;
+    display: flex;
+}
+
+.selectDiv {
+    margin-right: 4vw;
+}
+
+.paragraph {
+    font-weight: 600;
+}
+
+.numberInput {
+    margin: 1vw 0.25vw 1vw 0vw;
+    width: 13vw;
+    height: 2.1vw;
+    border-radius: 0.5vw;
+    border-width: 0.15vw;
+    border-color: black;
+    font-size: 1.2vw;
+    padding-left: 0.5vw;
+}
+
+.select {
+    margin: 1vw 0.25vw 1vw 0vw;
+    width: 14vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    border-width: 0.15vw;
+    border-color: black;
+    font-size: 1.2vw;
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.purchaseDiv {
+    margin-top: 8vw;
+    display: flex;
+}
+
+.priceTag {
+    display: block;
+    margin-left: 9vw;
+    margin-right: auto;
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.backButton {
+    margin: 2vw;
+    margin-top: 0;
+    width: 11vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    border-width: 0.15vw;
+}
+
+.backButton:hover {
+    background-color:#e3f8f9;
+    cursor: pointer;
+}
+
+.addToCartButton {
+    background-color: #538586;
+    color: white;
+    margin: 2vw;
+    margin-right: 8vw;
+    margin-top: 0;
+    width: 11vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    border-width: 0.15vw;
+}
+
+.addToCartButton:hover {
+    background-color:#8fc8ca;
+    cursor: pointer;
+}

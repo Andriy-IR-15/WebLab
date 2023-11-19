@@ -1,5 +1,5 @@
 .applyButton {
-    background-color: #dbdbdb;
+    background-color: white;
     margin: auto 2vw auto auto;
     width: 12vw;
     height: 3vw;
@@ -9,6 +9,6 @@
 }
 
 .applyButton:hover {
-    background-color: #b8b8b8;
+    background-color: gainsboro;
     cursor: pointer;
 }
