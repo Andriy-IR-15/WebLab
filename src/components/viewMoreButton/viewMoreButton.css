@@ -8,11 +8,11 @@
     height: 3vw;
     border: none;
     border-radius: 0.5vw;
-    background-color:#979797;
+    background-color:#5f9ea0;
     transition: background-color 0.2s ease-in-out;
 }
 
 .viewMoreButton:hover {
-    background-color:#6b6b6b;
+    background-color:#426b6c;
     cursor: pointer;
 }

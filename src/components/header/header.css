@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    background-color: #b8b7b7;
+    background-color: #da66ca;
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ li:hover {
 }
 
 .chosen {
-    background-color: #797979;
+    background-color: #7c116f;
     background-repeat: no-repeat;
     border-radius: 1vw;
 }
@@ -38,7 +38,7 @@ li:hover {
 }
 
 .notchosen:hover {
-    background-color: #727272;
+    background-color: #bd3dab;
 }
 
 a {

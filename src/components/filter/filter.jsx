@@ -9,8 +9,8 @@ export default function Filter() {
 
     return (
         <div className='filter'>
-            <Select filterBy='Company' category={companyCategories}/>
-            <Select filterBy='Price' category={priceCategories}/>
+            <Select id="companyFilter" filterBy='Company' category={companyCategories}/>
+            <Select id="priceFilter" filterBy='Price' category={priceCategories}/>
             <ApplyButton/>
         </div>
     );
