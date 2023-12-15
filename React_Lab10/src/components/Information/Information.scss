@@ -1,0 +1,120 @@
+.Information {
+    display: flex;
+    padding: 2.1vh 8vw;
+    flex-direction: column;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 37%;
+        }
+
+        .textInformation {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            font-family: 'Source Sans Pro';
+            font-weight: bold;
+
+            .textInformation--characteristic {
+                justify-content: space-between;
+                display: flex;
+                color: #FFFFFF;
+                font-size: 1rem;
+                text-align: center;
+                width: 50%;
+
+                .textInformation--characteristic--1 {
+                    background: #424242;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 1vh 2vw;
+                }
+
+                .textInformation--characteristic--2 {
+                    background: #00828D;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 1vh 2vw;
+                }
+            }
+
+            .textInformation--main {
+                display: flex;
+                flex-direction: column;
+                padding: 0vh 0;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .InformationInput {
+                padding: 1vh 0;
+                display: flex;
+                justify-content: space-around;
+                width: 60%;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+
+                    label {
+                        padding: 2.5vh 0;
+                    }
+
+                    select {
+                        text-align: left;
+                        font-family: 'Source Sans Pro';
+                        padding: 10px;
+                        font-size: 1.2rem;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15vh;
+        font-family: Arimo;
+
+        p {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 28%;
+            button {
+                padding: 1vh 3vw;
+                color: #000000;
+                font-family: 'Source Sans Pro';
+                font-size: 1.3rem;
+                font-weight: normal;
+                font-style: normal;
+                text-align: center;
+                background: #FFFFFF;
+                border: 1px solid #000000;
+                border-radius: 12px;
+                
+            }
+        }
+    }
+}

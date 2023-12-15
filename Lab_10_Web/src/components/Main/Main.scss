@@ -1,0 +1,81 @@
+.Main {
+    padding: 0vw 8vw 7vh 8vw;
+    animation: fadeIn 1s ease-in-out;
+
+    .MainInformation {
+        padding: 5vh 0vh 15vh 0vh;
+        display: flex;
+        justify-content: space-between;
+        animation: fadeIn 1s ease-in-out;
+
+        img {
+            width: 35%;
+            border-radius: 30px;
+            animation: bounce 2s infinite;
+        }
+
+        div {
+            width: 58%;
+            animation: fadeIn 1s ease-in-out;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .MainCard {
+        display: flex;
+        justify-content: space-between;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .button-more {
+        margin: 0 34.5vw;
+        padding: 2vh 3vw;
+        color: #FFFFFF;
+        font-family: 'Source Sans Pro';
+        margin-top: 5vh;
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        background: #424242;
+        border: none;
+        border-radius: 8px;
+        animation: shake 2s infinite;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-10px);
+    }
+    40%, 80% {
+        transform: translateX(10px);
+    }
+}
