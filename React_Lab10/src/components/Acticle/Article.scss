@@ -1,0 +1,47 @@
+.cardItem {
+    height: 25%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: black solid 1.2px;
+    margin-bottom: 4%;
+    margin-left: 3.5vw;
+    font-family: 'Source Sans Pro';
+
+    p {
+        border-radius: 10px 10px 0px 0px;
+        margin: 0;
+        margin-bottom: 5%;
+        padding-left: 5%;
+        padding-bottom: 2%;
+        background-color: white;
+    }
+
+    img {
+        padding: 0% 10%;
+        width: 80%;
+    }
+
+    button {
+        color: white;
+        width: 80%;
+        padding: 5% 0;
+        margin: 10%;
+        border: none;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        background: #424242;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+
+    .textCard {
+        margin: 0% 10%;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}

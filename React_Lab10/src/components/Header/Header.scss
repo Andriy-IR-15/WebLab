@@ -1,0 +1,46 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding: 1vh 8vw 1vh 8vw;
+
+    .LogoHeader {
+        position: relative;
+        right: 38%;
+        width: 5%;
+        padding-right: 0%;
+    }
+
+    nav {
+        position: relative;
+        right: 6%;
+        width: 20%;
+        list-style: none;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 0;
+        }
+    }
+
+    a {
+        color: #000000;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        padding: 1vh 1.5vw;
+
+        &:hover {
+            background: #e0e0e0;
+            border: none;
+            border-radius: 30px;
+        }
+    }
+}

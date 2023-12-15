@@ -1,0 +1,42 @@
+.button {
+    padding: 0 8vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+
+    .back {
+        padding: 1vh 2vw;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        color: #000000;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 8px;
+    }
+
+    .continue {
+        padding: 1vh 2vw;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        color: #FFFFFF;
+        background: #424242;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+.total-price {
+    padding: 0 8vw;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
